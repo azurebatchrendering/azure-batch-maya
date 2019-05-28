@@ -2,7 +2,7 @@
   "imageReferences": [
     {
       "id": "centos-75-container",
-      "node_sku_id": "batch.node.centos 7",
+      "node_Sku_Id": "batch.node.centos 7",
       "publisher": "microsoft-azure-batch",
       "offer": "centos-container",
       "sku": "7-5",
@@ -10,7 +10,7 @@
     },
     {
       "id": "ubuntu-1604lts-container",
-      "node_sku_id": "batch.node.ubuntu 16.04",
+      "node_Sku_Id": "batch.node.ubuntu 16.04",
       "publisher": "microsoft-azure-batch",
       "offer": "ubuntu-server-container",
       "sku": "16-04-lts",
@@ -18,7 +18,7 @@
     },
     {
       "id": "windowsserver-2016-container",
-      "node_sku_id": "batch.node.windows amd64",
+      "node_Sku_Id": "batch.node.windows amd64",
       "publisher": "MicrosoftWindowsServer",
       "offer": "WindowsServer",
       "sku": "2016-DataCenter-With-Containers",
@@ -27,88 +27,7 @@
   ],
   "containerImages": [
     {
-      "containerImage": "azurebatchrendering/centos_maya2017update5:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2017-Update5",
-      "renderer": "mayasw",
-      "rendererVersion": "2017-Update5",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2017update5_arnold2011:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2017-Update5",
-      "renderer": "arnold",
-      "rendererVersion": "2.0.1.1",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2017update5_arnold3101:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2017-Update5",
-      "renderer": "arnold",
-      "rendererVersion": "3.1.0.1",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2017update5_vray36004:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2017-Update5",
-      "renderer": "vray",
-      "rendererVersion": "36004",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update2:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update2",
-      "renderer": "mayasw",
-      "rendererVersion": "2018-Update2",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update2_arnold2023:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update2",
-      "renderer": "arnold",
-      "rendererVersion": "2.0.2.3",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update2_arnold2103:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update2",
-      "renderer": "arnold",
-      "rendererVersion": "2.1.0.3",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update2_arnold3101:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update2",
-      "renderer": "arnold",
-      "rendererVersion": "3.1.0.1",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update2_vray36004:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update2",
-      "renderer": "vray",
-      "rendererVersion": "36004",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update3:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u3:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update3",
@@ -117,7 +36,7 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update3_arnold2023:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u3_arnold2023:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update3",
@@ -126,25 +45,7 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update3_arnold2103:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update3",
-      "renderer": "arnold",
-      "rendererVersion": "2.1.0.3",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update3_arnold3101:latest",
-      "os": "CentOS 75",
-      "app": "maya",
-      "appVersion": "2018-Update3",
-      "renderer": "arnold",
-      "rendererVersion": "3.1.0.1",
-      "imageReferenceId": "centos-75-container"
-    },
-    {
-      "containerImage": "azurebatchrendering/centos_maya2018update3_vray36004:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u3_vray36004:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update3",
@@ -153,7 +54,61 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update4:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u3_arnold3101:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update3",
+      "renderer": "arnold",
+      "rendererVersion": "3.1.0.1",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u3_arnold2103:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update3",
+      "renderer": "arnold",
+      "rendererVersion": "2.1.0.3",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2017u5:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2017-Update5",
+      "renderer": "mayasw",
+      "rendererVersion": "2017-Update5",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2017u5_arnold2011:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2017-Update5",
+      "renderer": "arnold",
+      "rendererVersion": "2.0.1.1",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2017u5_vray36004:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2017-Update5",
+      "renderer": "vray",
+      "rendererVersion": "36004",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2017u5_arnold3101:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2017-Update5",
+      "renderer": "arnold",
+      "rendererVersion": "3.1.0.1",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u4:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update4",
@@ -162,7 +117,7 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update4_arnold2023:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u4_arnold2023:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update4",
@@ -171,16 +126,16 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update4_arnold2103:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u4_vray36004:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update4",
-      "renderer": "arnold",
-      "rendererVersion": "2.1.0.3",
+      "renderer": "vray",
+      "rendererVersion": "36004",
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update4_arnold3101:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u4_arnold3101:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update4",
@@ -189,12 +144,57 @@
       "imageReferenceId": "centos-75-container"
     },
     {
-      "containerImage": "azurebatchrendering/centos_maya2018update4_vray36004:latest",
+      "containerImage": "azurebatchrendering/centos-maya_2018u4_arnold2103:latest",
       "os": "CentOS 75",
       "app": "maya",
       "appVersion": "2018-Update4",
+      "renderer": "arnold",
+      "rendererVersion": "2.1.0.3",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u2:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update2",
+      "renderer": "mayasw",
+      "rendererVersion": "2018-Update2",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u2_arnold2023:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update2",
+      "renderer": "arnold",
+      "rendererVersion": "2.0.2.3",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u2_vray36004:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update2",
       "renderer": "vray",
       "rendererVersion": "36004",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u2_arnold3101:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update2",
+      "renderer": "arnold",
+      "rendererVersion": "3.1.0.1",
+      "imageReferenceId": "centos-75-container"
+    },
+    {
+      "containerImage": "azurebatchrendering/centos-maya_2018u2_arnold2103:latest",
+      "os": "CentOS 75",
+      "app": "maya",
+      "appVersion": "2018-Update2",
+      "renderer": "arnold",
+      "rendererVersion": "2.1.0.3",
       "imageReferenceId": "centos-75-container"
     }
   ]
